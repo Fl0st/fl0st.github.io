@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florian QUESNEL - Portfolio SISR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full z-50">
+        <div class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-2 font-light tracking-widest text-lg">
+                <span class="text-cyan-custom"><i class="fa-solid fa-terminal"></i></span> FLORIAN QUESNEL
+            </div>
+            <ul class="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.2em] font-medium text-slate-400">
+                <li><a href="#" class="hover:text-cyan-custom transition">Accueil</a></li>
+                <li><a href="#profil" class="hover:text-cyan-custom transition">Profil</a></li>
+                <li><a href="#competences" class="hover:text-cyan-custom transition">Compétences</a></li>
+                <li><a href="#projets" class="hover:text-cyan-custom transition">Projets</a></li>
+                <li><a href="#contact" class="hover:text-cyan-custom transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 overflow-hidden">
+        <canvas id="galaxy-canvas"></canvas>
+        <div class="hero-content flex flex-col items-center">
+            <span class="badge-header">Futur Administrateur Systèmes & Réseaux</span>
+            <h1 class="hero-title">PORTFOLIO</h1>
+            <p class="text-xl md:text-2xl text-slate-400 mb-8 font-light italic tracking-wide shadow-text">
+                Étudiant en BTS SIO option SISR
+            </p>
+            <p class="max-w-2xl text-slate-300 mb-12 text-lg leading-relaxed shadow-text font-light">
+                À 20 ans, j'évolue actuellement en <strong>parcours d'alternance</strong>. Passionné par l'informatique, je me spécialise dans la gestion d'infrastructures IT, la sécurisation des SI et la virtualisation.
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                <a href="#projets" class="btn-primary">
+                    Voir mes Projets
+                </a>
+                <a href="CV_Florian_QUESNEL.pdf" download class="btn-cv">
+                    <i class="fa-solid fa-file-arrow-down"></i> Télécharger mon CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="profil">
+    <h2>Profil & Parcours Scolaire</h2>
+    
+    <div class="grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-4">
+            <div class="card-bg sticky top-32">
+                <div class="flex items-center gap-4 mb-6 text-cyan-custom">
+                    <i class="fa-solid fa-user-gear text-xl"></i>
+                    <span class="text-[10px] uppercase tracking-widest font-bold">À propos</span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Passionné par les infrastructures réseaux et la cybersécurité, mon parcours reflète une spécialisation progressive vers l'administration système. Mon alternance actuelle chez Abicom vient consolider ces acquis théoriques par une expertise terrain.
+                </p>
+                <a href="CV_Florian_QUESNEL.pdf" download class="btn-cv w-full text-center block">
+                    <i class="fa-solid fa-download mr-2"></i> Télécharger CV
+                </a>
+            </div>
+        </div>
+
+        <div class="lg:col-span-8 space-y-8">
+            
+            <div class="card-bg relative border-l-4 border-cyan-custom">
+                <span class="text-cyan-custom font-bold text-xs uppercase tracking-widest">En cours • 2024 — 2026</span>
+                <h3 class="text-xl font-bold text-white mt-2">BTS SIO Option SISR</h3>
+                <p class="text-slate-500 text-sm mb-4 italic">Services Informatiques aux Organisations</p>
+                <p class="text-slate-400 text-sm">Spécialisation dans l'administration des systèmes et réseaux, la sécurité et la virtualisation.</p>
+            </div>
+
+            <div class="card-bg relative border-l-4 border-slate-700">
+                <span class="text-slate-500 font-bold text-xs uppercase tracking-widest">2023 — 2024</span>
+                <h3 class="text-xl font-bold text-white mt-2">1ère année BUT Réseaux & Télécoms</h3>
+                <p class="text-slate-500 text-sm mb-4 italic">IUT de Roanne / Saint-Étienne</p>
+                <p class="text-slate-400 text-sm">Apprentissage des bases du routage, des protocoles de communication et de la téléphonie IP.</p>
+            </div>
+
+            <div class="card-bg relative border-l-4 border-slate-700">
+                <span class="text-slate-500 font-bold text-xs uppercase tracking-widest">Diplômé en 2023</span>
+                <h3 class="text-xl font-bold text-white mt-2">Baccalauréat Général</h3>
+                <p class="text-slate-500 text-sm mb-4 italic">Spécialités NSI & SES</p>
+                <p class="text-slate-400 text-sm">Initiation à la programmation (Python), aux bases de données et à l'architecture matérielle via la spécialité <strong>Numérique et Sciences Informatiques</strong>.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="expertise">
+    <h2>Expertise & Qualités</h2>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+        
+        <div class="card-bg border-l-4 border-cyan-custom">
+            <div class="flex items-center gap-4 mb-8 text-cyan-custom">
+                <i class="fa-solid fa-microchip text-2xl"></i>
+                <h3 class="text-white font-bold uppercase tracking-widest text-sm">Compétences Techniques</h3>
+            </div>
+            
+            <div class="space-y-6">
+                <div>
+                    <p class="text-xs text-slate-500 uppercase mb-2">Systèmes & Virtualisation</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge-tech">Windows Server</span>
+                        <span class="badge-tech">Linux Debian</span>
+                        <span class="badge-tech">Active Directory</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-500 uppercase mb-2">Réseaux & Sécurité</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge-tech">IPFire / Squid</span>
+                        <span class="badge-tech">Routage & VLAN</span>
+                        <span class="badge-tech">Veeam Backup</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-500 uppercase mb-2">Supervision & Gestion</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge-tech">Nagios</span>
+                        <span class="badge-tech">GLPI / OCS</span>
+                        <span class="badge-tech">GPO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-bg border-l-4 border-blue-500">
+            <div class="flex items-center gap-4 mb-8 text-blue-500">
+                <i class="fa-solid fa-handshake text-2xl"></i>
+                <h3 class="text-white font-bold uppercase tracking-widest text-sm">Qualités Personnelles</h3>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="flex gap-4">
+                    <div class="text-blue-500 mt-1"><i class="fa-solid fa-brain"></i></div>
+                    <div>
+                        <h4 class="text-white text-sm font-bold">Rigueur & Analyse</h4>
+                        <p class="text-xs text-slate-400">Essentiel pour le troubleshooting et la gestion des logs de sauvegarde.</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4">
+                    <div class="text-blue-500 mt-1"><i class="fa-solid fa-comments"></i></div>
+                    <div>
+                        <h4 class="text-white text-sm font-bold">Sens du service</h4>
+                        <p class="text-xs text-slate-400">Capacité à répondre aux besoins des clients et à vulgariser les solutions techniques.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="text-blue-500 mt-1"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <div>
+                        <h4 class="text-white text-sm font-bold">Réactivité</h4>
+                        <p class="text-xs text-slate-400">Gestion prioritaire des incidents critiques en milieu de production.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="text-blue-500 mt-1"><i class="fa-solid fa-book-open"></i></div>
+                    <div>
+                        <h4 class="text-white text-sm font-bold">Curiosité technique</h4>
+                        <p class="text-xs text-slate-400">Veille constante sur les nouvelles menaces et solutions de cybersécurité.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="projets">
+    <h2>Réalisations</h2>
+    
+    <div class="project-grid">
+        
+        <div class="card-bg">
+            <div class="text-cyan-custom mb-6 text-3xl">
+                <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3>Infrastructure GSB</h3>
+            <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                Déploiement complet d'une infrastructure sécurisée (DMZ, AD, Proxy) répondant aux besoins d'une organisation multisites.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-8">
+                <span class="badge-tech">Réseau</span>
+                <span class="badge-tech">Sécurité</span>
+            </div>
+            <a href="projets/gsb-infra.html" class="btn-cv text-[10px]">Consulter le dossier technique →</a>
+        </div>
+
+        <div class="card-bg">
+            <div class="text-cyan-custom mb-6 text-3xl">
+                <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <h3>Supervision & Sauvegarde</h3>
+            <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                Gestion de la protection des données clients via Veeam Backup & Replication et maintien en condition opérationnelle.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-8">
+                <span class="badge-tech">Veeam</span>
+                <span class="badge-tech">MCO</span>
+            </div>
+            <a href="projets/supervision-sauvegarde.html" class="btn-cv text-[10px]">Consulter le dossier technique →</a>
+        </div>
+
+        <div class="card-bg">
+            <div class="text-cyan-custom mb-6 text-3xl">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Portfolio Professionnel</h3>
+            <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                Conception et développement d'une vitrine numérique moderne pour valoriser mon parcours et mes compétences SISR.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-8">
+                <span class="badge-tech">Web</span>
+                <span class="badge-tech">GitHub</span>
+            </div>
+            <a href="projets/portfolio-web.html" class="btn-cv text-[10px]">Consulter le dossier technique →</a>
+        </div>
+
+    </div>
+</section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="max-w-2xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="text-cyan-custom mb-4 text-2xl"><i class="fa-solid fa-envelope"></i></div>
+                    <p class="text-xs uppercase tracking-widest text-slate-500 mb-2 font-bold">Email</p>
+                    <p class="text-slate-300 font-light">florian.quesnel87@gmail.com</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-cyan-custom mb-4 text-2xl"><i class="fa-brands fa-linkedin"></i></div>
+                    <p class="text-xs uppercase tracking-widest text-slate-500 mb-2 font-bold">LinkedIn</p>
+                    <a href="https://www.linkedin.com/in/florianquesnel/" target="_blank" class="text-slate-300 font-light hover:text-cyan-custom transition italic underline decoration-cyan-custom/30">Voir le profil professionnel</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center text-slate-600 text-[10px] uppercase tracking-[0.3em] font-medium">
+        &copy; 2026 Florian QUESNEL — Portfolio SISR —
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
